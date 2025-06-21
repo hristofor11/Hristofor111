@@ -13,4 +13,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...telegram
 - 😄 Pronouns: ...hrustt2121
 - ⚡ Fun fact: ...don t know
--->
+- 😍 description: ...What can this bot do?
+This bot helps to identify the type of shoes. It's completely free, so CLICK "START"!
+Link to the bot: https://github.com/user-attachments/assets/1cc4a3b3-b4cd-44d8-af8e-f3e412db0ff1 (screenshot)
+
