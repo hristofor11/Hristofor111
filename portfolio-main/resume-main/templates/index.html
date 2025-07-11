@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Резюме на базе Python</title>
+          <center><img
+            class="info-block__img"
+            src="../static/img/website.gif"
+            alt="me"
+            width="250"
+            height="250"
+          /></center> 
+
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#resume">Давайте знакомится</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">Немного обо мне</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">Мои навыки</a>
+          </li>
+          
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#feedback">Обратная связь</a>
+          </li>
+
+
+        </ul>
+      
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Секция превью -->
+      <section class="main__home home" id="home">
+        <strong><h1 class="home__title">Христофор Ситников</h1></strong>
+
+
+        <p class="home__subtitle">Резюме</p>
+        <img class="project__img" src="../static/img/office1.jpeg" alt="project" width="1000">
+        <img class="project__img" src="../static/img/office.jpeg" alt="project" width="1000">
+        <h3 id="resume">Ситников Христофор:</h3>
+         <p>Город/Станица проживание: Благовещенская.</p>
+          <p>Граждантство: Российская Федерация.</p>
+          <p>Дата рождения: 22.04.2013.</p>
+          <p>Пол: Мужской.</p>
+
+
+        <h3>Образование:</h3>
+        <p>
+          Школа: №8 имени В.И. Хряева.
+          Класс: 6А
+        </p>
+      
+      <section class="main__feedback feedback" id="resume">
+        <h2 class="me__title">Пользователь</h2>
+        <form action="" method="POST" class="me__form form">
+          <label for="me">
+            <input type="email" class="form__input" name="me" id="resume" placeholder="А меня зовут..." required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="resume" cols="70" rows="10" required placeholder="Расскажите о себе"></textarea>
+          </label>
+        
+
+      <!-- Секция с рассказом о себе -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">Немного обо мне </h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            Я - Ситников Христофор front-end разработчик. Люблю програмирование.
+            Хожу в музыкальную школу.
+          </p>
+          <img
+            class="info-block__img"
+            src="../static/img/unnamed.png"
+            alt="me"
+            width="250"
+            height="250"
+          />
+
+
+        </div>
+      </section>
+      <!-- Секция со скиллами -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">Мои достижения</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+           
+
+
+<img
+          class="skill__img"
+          src="../static/img/minecraft.gif"
+          alt="discord"
+          width="150"
+          height="150"
+              />
+
+
+
+
+              <strong><span class="skill__info">Любимая игра</span></strong>
+              <a href="https://github.com" type="button" button="sumbit">Найти на Github</a>
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/stiv.gif"
+                alt="discord"
+                width="150"
+                height="150"
+              />
+              </strong><span class="skill__info">Информация</span></strong>
+              <a href="https://github.com" type="'button" button="sumbit">Найти на Github</a>
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/html.png"
+                alt="html"
+                width="150"
+                height="150"
+              />
+              </strong><span class="skill__info">Информация</span></strong>
+              <a href="https:github.com" type="button" button="sumbit">Найти на Github</a>
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/db.webp"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              </strong><span class="skill__info">Информация</span></strong>
+              <a href="https://github.com" type="button" button="sumbit">Найти на GitHub</a>
+              
+              
+            </li>
+          </ul>
+        </form>
+        {% if button_python%}
+        <h4>................</h4>
+        {% endif %}
+      </section>
+      <!-- Секция с формой обратной связи -->
+      <section class="main__feedback feedback" id="feedback">
+        <h2 class="feedback__title">Обратная связь</h2>
+        <form action="" method="POST" class="feedback__form form">
+          <label for="email">
+            <input type="email" class="form__input" name="email" id="email" placeholder="Введите E-mail" required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Комментарий"></textarea>
+          </label>
+          <marquee scroll><button class="form__button" type="submit">ОТПРАВИТЬ</button></marquee scroll>
+        <img class="project__img" src="../static/img/office3.jpeg" alt="project" width="1000">
+        <h1><center>Python</center></h1>
+        <String>Успешно окончил курсы на языке программирование такие как:</String>
+        <h3>1.Python: Base intership</h3>
+        <h3>2.Python Pro</h3>
+        <center><img
+            class="info-block__img"
+            src="../static/img/2.gif"
+            alt="me"
+            width="250"
+            height="250"
+          /></center> 
+
+
+        </form>
+      </section>
+    </main>
+    <!-- Подвал для ссылок на соц-сети -->
+    <footer>
+
+    </footer>
+  </body>
+</html>
