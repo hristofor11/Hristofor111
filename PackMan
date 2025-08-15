@@ -1,0 +1,73 @@
+using System;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            Console.CursorVisible = false;
+            char[,] map =
+            {
+                {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'},
+                {'#', ' ', ' ', '#', '#', '#', '#', '#', '#', '#', '#'},
+                {'#', ' ', '#', '#', '#', '#', '#', '#', '#', '#', '#'},
+                {'#', ' ', ' ', ' ', ' ', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', ' ', ' ', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', ' ', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', ' ', ' ', ' ', ' ', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'}
+            };
+
+            int userX = 4, userY = 6;
+            int monetkaX = 4, monetkaY = 5;
+
+            while (true)
+            {
+                Console.SetCursorPosition(0, 0);
+                for (int i = 0; i < map.GetLength(0); i++)
+                {
+                    for (int j = 0; j < map.GetLength(1); j++)
+                    {
+                        Console.Write(map[i, j]);
+                    }
+                    Console.WriteLine();
+                }
+
+                Console.SetCursorPosition(userY, userX);
+                Console.Write('@');
+
+                ConsoleKeyInfo key = Console.ReadKey(true);
+
+                switch (key.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        if (userX > 0 && map[userX - 1, userY] != '#') userX--;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        if (userX < map.GetLength(0) - 1 && map[userX + 1, userY] != '#') userX++;
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        if (userY > 0 && map[userX, userY - 1] != '#') userY--;
+                        break;
+                    case ConsoleKey.RightArrow:
+                        if (userY < map.GetLength(1) - 1 && map[userX, userY + 1] != '#') userY++;
+                        break;
+                }
+          
+                
+             
+
+                Console.Clear();
+            }
+        }
+    }
+}
